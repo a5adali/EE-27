@@ -1,0 +1,174 @@
+
+**** 03/25/25 17:52:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sil10"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\Lab03\lb10-PSpiceFiles\SCHEMATI
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sil10.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LB10
+R_RS         0 N00463  100 TC=0,0 
+R_RD         N00469 N00584  220 TC=0,0 
+V_V1         0 N01301  AC 0
++SIN 0 0 0 0 0 0
+R_R5         N00355 N00584  100k TC=0,0 
+R_R6         0 N00355  56k TC=0,0 
+R_R7         0 N00758  100Meg TC=0,0 
+C_C2         N00469 N00758  1u  TC=0,0 
+C_C3         0 N00463  15u  TC=0,0 
+V_VDD         N00584 0 10V
+X_U2         N00469 N00355 N00463 2N7000
+C_C4         N01301 N00355  1u  TC=0,0 
+
+**** RESUMING sil10.cir ****
+.END
+
+**** 03/25/25 17:52:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sil10"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\Lab03\lb10-PSpiceFiles\SCHEMATI
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.DBD        
+          IS   48.116150E-15 
+          BV   75            
+         IBV   10.000000E-06 
+          RS    1.000000E-06 
+          TT   30.000000E-09 
+         CJO   16.940000E-12 
+          VJ     .5          
+           M     .2          
+
+
+**** 03/25/25 17:52:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sil10"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\Lab03\lb10-PSpiceFiles\SCHEMATI
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.MINT       
+               NMOS            
+       LEVEL    3            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    2.148821     
+          KP     .5106       
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS    1.000000E-24 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+        VMAX    1.000000E+03 
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0  600            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 03/25/25 17:52:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sil10"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\Lab03\lb10-PSpiceFiles\SCHEMATI
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00355)    3.5897 (N00463)    1.2090 (N00469)    7.3403 (N00584)   10.0000     
+
+(N00758)    0.0000 (N01301)    0.0000 (X_U2.1)    3.5897 (X_U2.2)    3.5897     
+
+(X_U2.3)    7.3241 (X_U2.4)    7.3403 (X_U2.5)    7.3403 (X_U2.6)    1.2090     
+
+(X_U2.7)    1.2090 (X_U2.8)    1.2090 (X_U2.9)    7.3403 (X_U2.11)    0.0000    
+
+(X_U2.12)    3.7344                   (X_U2.13)   11.0340                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_VDD       -1.215E-02
+    X_U2.V11     0.000E+00
+
+    TOTAL POWER DISSIPATION   1.22E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/25/25 17:52:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sil10"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\Lab03\lb10-PSpiceFiles\SCHEMATI
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

@@ -1,0 +1,4 @@
+* source LAB01_TASK3
+V_V1         N00113 0 10
+R_R1         N00113 N00106  100 TC=0,0 
+D_D1         0 N00106 1N34A 

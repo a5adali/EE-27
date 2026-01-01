@@ -1,0 +1,83 @@
+
+**** 01/10/25 12:20:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task1_sim1"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task1-PSpiceFiles\SCHEMATIC1\lab1_t
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab1_task1_sim1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0.1 150 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB01_TASK1
+X_D1         0 N00139 awb1n4001 PARAMS:                
+R_R1         N00146 N00139  100 TC=0,0 
+V_V1         N00146 0 10
+
+**** RESUMING lab1_task1_sim1.cir ****
+.END
+
+**** 01/10/25 12:20:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task1_sim1"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task1-PSpiceFiles\SCHEMATIC1\lab1_t
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.model22    
+          IS  149.000000E-09 
+           N    2.21         
+          BV  100            
+         IBV    1            
+          RS     .03         
+          TT    1.440000E-06 
+         CJO   23.130000E-12 
+          VJ     .5          
+           M     .421        
+          EG    1.11         
+
+
+
+          JOB CONCLUDED
+
+**** 01/10/25 12:20:39 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task1_sim1"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task1-PSpiceFiles\SCHEMATIC1\lab1_t
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

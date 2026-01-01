@@ -1,0 +1,83 @@
+
+**** 01/15/25 14:43:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-si1"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\123456-PSpiceFiles\SCHEMATIC1\si1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "si1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0.1 150 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 123456
+V_V1         N00092 0 15
+R_R1         N00092 N00099  1k TC=0,0 
+X_D1         0 N00099 awb1n4001 PARAMS:                
+
+**** RESUMING si1.cir ****
+.END
+
+**** 01/15/25 14:43:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-si1"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\123456-PSpiceFiles\SCHEMATIC1\si1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.model22    
+          IS  149.000000E-09 
+           N    2.21         
+          BV  100            
+         IBV    1            
+          RS     .03         
+          TT    1.440000E-06 
+         CJO   23.130000E-12 
+          VJ     .5          
+           M     .421        
+          EG    1.11         
+
+
+
+          JOB CONCLUDED
+
+**** 01/15/25 14:43:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-si1"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\123456-PSpiceFiles\SCHEMATIC1\si1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+

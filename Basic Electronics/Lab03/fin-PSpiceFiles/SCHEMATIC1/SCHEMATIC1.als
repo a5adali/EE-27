@@ -1,0 +1,8 @@
+.ALIASES
+V_V1            V1(+=N00297 -=0 ) CN @FIN.SCHEMATIC1(sch_1):INS26@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=0 -=N00697 ) CN @FIN.SCHEMATIC1(sch_1):INS168@SOURCE.VDC.Normal(chips)
+V_V3            V3(+=N00744 -=0 ) CN @FIN.SCHEMATIC1(sch_1):INS186@SOURCE.VDC.Normal(chips)
+R_R1            R1(1=N00297 2=N00316 ) CN @FIN.SCHEMATIC1(sch_1):INS213@ANALOG.R.Normal(chips)
+V_V4            V4(+=N00316 -=N00744 ) CN @FIN.SCHEMATIC1(sch_1):INS1148@SOURCE.VDC.Normal(chips)
+V_V5            V5(+=N00697 -=N00316 ) CN @FIN.SCHEMATIC1(sch_1):INS1171@SOURCE.VDC.Normal(chips)
+.ENDALIASES

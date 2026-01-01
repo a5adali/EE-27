@@ -1,0 +1,124 @@
+
+**** 01/17/25 13:51:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-prelab_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab02\Lab2_Prelab-PSpiceFiles\SCHEMATIC1\prelab_sim.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "prelab_sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab2_prelab-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.2s 0 0.001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2_PRELAB
+V_V1         N00157 0  AC 0
++SIN 0 240 50 0 0 0
+X_D1         N00182 N00186 awb1n4007 PARAMS:                
+R_R1         N00193 N00186  1k TC=0,0 
+X1_TX1         N00157 0  N00182 N00193 ST1_Model
+
+**** RESUMING prelab_sim.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file PSpiceModelApps_Include.ind for library file PSpiceModelApps_Include.lib.
+
+INFO(ORPSIM-15422): Making new index file PSpiceModelApps_Include.ind for library file PSpiceModelApps_Include.lib.
+
+Index has 2 entries from 1 file(s).
+
+**** 01/17/25 13:51:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-prelab_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab02\Lab2_Prelab-PSpiceFiles\SCHEMATIC1\prelab_sim.
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.model22    
+          IS  149.000000E-09 
+           N    2.21         
+          BV    1.100000E+03 
+         IBV    1            
+          RS     .03         
+          TT    1.440000E-06 
+         CJO   23.130000E-12 
+          VJ     .5          
+           M     .421        
+          EG    1.11         
+
+
+**** 01/17/25 13:51:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-prelab_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab02\Lab2_Prelab-PSpiceFiles\SCHEMATIC1\prelab_sim.
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00157)    0.0000 (N00182) 103.0E-27 (N00186)-10.30E-21 (N00193) 2.939E-30     
+
+(X1_TX1.PI)    0.0000                 (X1_TX1.SI) 2.938E-30                     
+
+(X1_TX1.SI1) 2.939E-30                
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/17/25 13:51:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-prelab_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab02\Lab2_Prelab-PSpiceFiles\SCHEMATIC1\prelab_sim.
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .98
+

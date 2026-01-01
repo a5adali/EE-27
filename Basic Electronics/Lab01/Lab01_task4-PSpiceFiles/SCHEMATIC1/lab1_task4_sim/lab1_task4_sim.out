@@ -1,0 +1,111 @@
+
+**** 01/11/25 12:12:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task4_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task4-PSpiceFiles\SCHEMATIC1\lab1_ta
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab1_task4_sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB01_TASK4
+V_V1         N00122 0 5
+R_R1         N00122 N00396  2.2k TC=0,0 
+R_R2         0 N00396  1k TC=0,0 
+X_D1         N00396 0 awb1n4001 PARAMS:                
+
+**** RESUMING lab1_task4_sim.cir ****
+.END
+
+**** 01/11/25 12:12:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task4_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task4-PSpiceFiles\SCHEMATIC1\lab1_ta
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.model22    
+          IS  149.000000E-09 
+           N    2.21         
+          BV  100            
+         IBV    1            
+          RS     .03         
+          TT    1.440000E-06 
+         CJO   23.130000E-12 
+          VJ     .5          
+           M     .421        
+          EG    1.11         
+
+
+**** 01/11/25 12:12:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task4_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task4-PSpiceFiles\SCHEMATIC1\lab1_ta
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00122)    5.0000 (N00396)     .5271 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.033E-03
+
+    TOTAL POWER DISSIPATION   1.02E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/11/25 12:12:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task4_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task4-PSpiceFiles\SCHEMATIC1\lab1_ta
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

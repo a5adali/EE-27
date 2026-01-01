@@ -1,0 +1,137 @@
+% Task1(i)
+x = 15.5 + 3.175i;
+%(a)
+real(x)
+%(b)
+imag(x)
+%(c)
+conj(x)
+%(d)
+angle(x)
+%(e)
+abs(x)
+
+%% Task1(ii)
+
+ang = deg2rad(45) %convert degrees to radians
+y = 5               
+[a, b] = pol2cart(ang, y) %gives values of real and imaginery part
+cart= a +b*i       %gives cartesian form
+%(a)
+real(cart)
+%(b)
+imag(cart)
+%(c)
+conj(cart)
+%(d)
+angle(cart)
+%(e)
+abs(cart)
+%% Try1
+
+n = 0:10; % Discrete-time n is defined which goes from 0 to 10 in unity sampling interval.
+y = cos(n); % A sinusoidal function y[n] is defined attaining values −𝟏 ≤ 𝒚[𝒏] ≤ 𝟏.
+figure; plot(n, y, ':o'); % A continuous-time graphical plot of the signal y[n] where circular markers are used to represent values connected with a dotted line.
+figure; stem(n, y); % A more appropriate discrete-time graphical representation
+
+%% Try2
+
+Ts = 0.1; % Defining sampling time, the time interval between two consecutive samples
+Fs = 1/Ts; % Defining sampling frequency, the number of samples per second
+t = 0:Ts:10; % Defining time span
+y = cos(t); % Obtaining a discrete-time signal
+figure; % Using subplots to depict two plots in one figure
+subplot 121; plot(t, y, ':o');
+subplot 122; stem(t, y);
+
+%% Task2(a)
+n = 0:10;
+y = cos(n);
+figure; plot(n, y, ':o');
+title('Try1- CT Graph of cos(n) with unity Interval')
+xlabel('n')
+ylabel('cosn')
+
+
+figure; stem(n, y);
+title('Try1 - DT Graph of cos(n) with Unity Interval')
+xlabel('n')
+ylabel('cos(n)')
+
+Ts = 0.1;
+Fs = 1/Ts;
+t = 0:Ts:10;
+y = cos(t);
+figure;
+subplot 121;
+plot(t, y, ':o');
+title('Try2 - CT Graph, 0.1 interval')
+xlabel('t')
+ylabel('cos(t)')
+
+subplot 122;
+stem(t, y);
+title('Try2 - DT Graph, 0.1 interval')
+xlabel('t')
+ylabel('cos(t)')
+
+
+%% Task 2(b)
+
+Fs = 50; %50Hz
+Ts = 1/Fs;
+
+t = 0:Ts:3;
+x = 3*exp(-t).*cos(20*t + pi/3);
+figure;
+stem(t,x)
+title('DT Graph of x(t) with x-axis Ts')
+xlabel('t')
+ylabel('x(t)')
+%% Try 3
+
+clc;
+clear
+t = -20:1:20;
+y = mod(t,5);
+z = (t>=0);
+subplot(1,2,1);
+stairs(t,z,'linewidth',2)
+title('Unit-step signal');
+xlabel('Time');
+ylabel('Amplitude');
+axis([-20 20 0 1.1]);
+subplot(1,2,2);
+plot(t,y,'linewidth',1.5)
+title('Sawtooth signal');
+xlabel('Time');
+ylabel('Amplitude');
+axis([-20 20 0 5.2])
+
+%% Task 3
+
+clc;
+clear
+t = -20:0.1:20;
+y = mod(t,5);
+z = (t>=0);
+figure;
+plot(t,z)
+xlim([-20 20])
+ylim([-1 1])
+hold on
+title('Joint Unitstep-Sawtooth signal');
+xlabel('Time');
+ylabel('Amplitude');
+x=sawtooth(t,0.2)
+
+plot(t,x)
+xlim([-20 20])
+7
+ylim([-1 1])
+legend("unit-step","sawtooth")
+
+%% Task 4
+
+%% Task 5
+

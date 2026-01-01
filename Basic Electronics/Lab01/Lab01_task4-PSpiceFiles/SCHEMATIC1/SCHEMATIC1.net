@@ -1,0 +1,5 @@
+* source LAB01_TASK4
+V_V1         N00122 0 5
+R_R1         N00122 N00396  2.2k TC=0,0 
+R_R2         0 N00396  1k TC=0,0 
+X_D1         N00396 0 awb1n4001 PARAMS:                

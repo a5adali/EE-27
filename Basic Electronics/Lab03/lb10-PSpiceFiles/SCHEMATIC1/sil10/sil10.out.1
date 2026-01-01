@@ -1,0 +1,76 @@
+
+**** 03/25/25 17:47:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sil10"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\Lab03\lb10-PSpiceFiles\SCHEMATI
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sil10.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LB10
+X_U1         N00469 N00355 N00463 2N7000
+R_RS         N00596 N00463  100 TC=0,0 
+R_RD         N00469 N00584  220 TC=0,0 
+C_C1         N00404 N00355  1u  TC=0,0 
+V_V1         0 N00404  AC 0
++SIN 0 0 0 0 0 0
+R_R5         N00355 N00584  100k TC=0,0 
+R_R6         N00596 N00355  56k TC=0,0 
+R_R7         0 N00758  100Meg TC=0,0 
+C_C2         N00469 N00758  1u  TC=0,0 
+C_C3         N00596 N00463  15u  TC=0,0 
+V_VDD         N00584 N00596 0Vdc
+
+**** RESUMING sil10.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00596 is floating
+
+ERROR(ORPSIM-15142): Node N00463 is floating
+
+ERROR(ORPSIM-15142): Node N00469 is floating
+
+ERROR(ORPSIM-15142): Node N00584 is floating
+
+ERROR(ORPSIM-15142): Node N00355 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.5 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.4 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.1 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.8 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.7 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.6 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.3 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.9 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.2 is floating
+

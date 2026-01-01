@@ -1,0 +1,28 @@
+* source BE_PROJECT
+V_V1         N00158 0  AC 0
++SIN 0 10m 5k 0 0 0
+C_C1         N00158 N00165  1u  TC=0,0 
+R_R1         N00165 N00180  11k TC=0,0 
+R_R2         0 N00165  1k TC=0,0 
+R_RC         N00242 N00180  10k TC=0,0 
+R_RE         0 N00246  1k TC=0,0 
+X_Q1         N00242 N00165 N00246 awb2n4401 PARAMS:                            
++                 
+C_C2         N00242 N00376  1u  TC=0,0 
+C_C3         0 N00246  140n  TC=0,0 
+R_R5         N00376 N00180  33k TC=0,0 
+R_R6         0 N00376  15k TC=0,0 
+X_Q2         N00180 N00376 N01669 awb2n4401 PARAMS:                            
++                 
+X_Q3         N00653 N00657 N00647 awb2n4401 PARAMS:                            
++                 
+R_RE1         0 N01669  1k TC=0,0 
+R_R8         N00657 N00180  11k TC=0,0 
+R_R9         0 N00657  1k TC=0,0 
+R_RC2         N00653 N00180  10k TC=0,0 
+R_RE2         0 N00647  1k TC=0,0 
+R_R12         0 N00866  100meg TC=0,0 
+C_C4         N01669 N00657  1u  TC=0,0 
+C_C5         N00653 N00866  1u  TC=0,0 
+C_C6         0 N00647  140n  TC=0,0 
+V_V2         N00180 0 20

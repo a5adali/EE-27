@@ -1,0 +1,40 @@
+Cramer's rule:
+Pretty simple, for x1, replace col 1 with entries of B, and call that matix A1.
+then x1 = |A1|/|A| => det(A1)/det(A)
+same applies for any x_n
+
+- upper triangle, all elements below main diagonal = 0,
+vice versa for lower triangle
+-> determinant of any triangle matrix is product of all elements in the diagonal 
+
+- Square matrix in row-echelon form is upper triangle
+
+- Diagonal matrix => both upper and lower triangle, e.g. I
+
+Inverse of A = 1/det(A) * Adj(A)
+-> note: Adj(A) = Transpose of cofactor matrix 
+e.g. | C11 C21 | ^ T
+       | C21 C22 |
+
+-> my mistake is that I never took transpose of cofactor matrix.
+
+- For determinant, we can use row expansion method
+-> i.e. a11 * c11, where c11 = (-1)^1+1 * m11
+-> sum all a11*c11 + a21*c21 + ..... an1*cn1
+
+--------------
+Vectors:
+- ||u|| = length/norm of u => (u1^2 + u2^2 ...un^2)^1/2
+- u.v => ||u|| ||v|| cos theta
+- e1 = (1,0,0) 
+- e_i.e_i => ||e_i||^2 cos 0 => 1
+- e_i.e_j => ||e_i|| ||e_j|| cos 90 => 0 (i != j, all planes orthogonal/perpendicular to another)
+
+- u.v => u1v1 + u2v2 +..... u_n v_n
+-> proof: e1.e2 results in 0, so we only take products of components in same plane
+
+- u.u => ||u||^2
+
+- u.v = v.u
+
+- understand projections?

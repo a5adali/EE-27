@@ -1,0 +1,43 @@
+
+**** 01/11/25 11:46:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab1_task4_sim"  [ C:\Users\asada\Desktop\Basic Electronics\Lab01\Lab01_task4-PSpiceFiles\SCHEMATIC1\lab1_ta
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab1_task4_sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0.1 10 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB01_TASK4
+V_V1         N00122 0 5
+R_R1         N00122 N00140  2,2k TC=0,0 
+------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
+R_R2         0 N00144  1k TC=0,0 
+X_D1         N00140 N00144 awb1n4001 PARAMS:                
+
+**** RESUMING lab1_task4_sim.cir ****
+.END
+

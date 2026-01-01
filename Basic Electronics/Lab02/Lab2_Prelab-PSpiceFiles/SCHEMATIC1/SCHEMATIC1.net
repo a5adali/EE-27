@@ -1,0 +1,6 @@
+* source LAB2_PRELAB
+V_V1         N00157 0  AC 0
++SIN 0 240 50 0 0 0
+X_D1         N00182 N00186 awb1n4007 PARAMS:                
+R_R1         N00193 N00186  1k TC=0,0 
+X1_TX1         N00157 0  N00182 N00193 ST1_Model

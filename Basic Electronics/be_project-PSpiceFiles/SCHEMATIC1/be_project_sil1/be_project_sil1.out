@@ -1,0 +1,170 @@
+
+**** 05/13/25 14:46:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-be_project_sil1"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\be_project-pspicefile
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "be_project_sil1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\asada\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0.01 0.001 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BE_PROJECT
+V_V1         N00158 0  AC 0
++SIN 0 10m 5k 0 0 0
+C_C1         N00158 N00165  1u  TC=0,0 
+R_R1         N00165 N00180  11k TC=0,0 
+R_R2         0 N00165  1k TC=0,0 
+R_RC         N00242 N00180  10k TC=0,0 
+R_RE         0 N00246  1k TC=0,0 
+X_Q1         N00242 N00165 N00246 awb2n4401 PARAMS:                            
++                 
+C_C2         N00242 N00376  1u  TC=0,0 
+C_C3         0 N00246  140n  TC=0,0 
+R_R5         N00376 N00180  33k TC=0,0 
+R_R6         0 N00376  15k TC=0,0 
+X_Q2         N00180 N00376 N01669 awb2n4401 PARAMS:                            
++                 
+X_Q3         N00653 N00657 N00647 awb2n4401 PARAMS:                            
++                 
+R_RE1         0 N01669  1k TC=0,0 
+R_R8         N00657 N00180  11k TC=0,0 
+R_R9         0 N00657  1k TC=0,0 
+R_RC2         N00653 N00180  10k TC=0,0 
+R_RE2         0 N00647  1k TC=0,0 
+R_R12         0 N00866  100meg TC=0,0 
+C_C4         N01669 N00657  1u  TC=0,0 
+C_C5         N00653 N00866  1u  TC=0,0 
+C_C6         0 N00647  140n  TC=0,0 
+V_V2         N00180 0 20
+
+**** RESUMING be_project_sil1.cir ****
+.END
+
+**** 05/13/25 14:46:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-be_project_sil1"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\be_project-pspicefile
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model4     X_Q3.model4     
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  166.780000E-15  166.780000E-15  166.780000E-15 
+          EG    1.11            1.11            1.11         
+          BF   80              80              80            
+          NF    1.074           1.074           1.074        
+         VAF   78              78              78            
+         IKF     .5              .5              .5          
+         ISE    3.920000E-12    3.920000E-12    3.920000E-12 
+          NE    1.776           1.776           1.776        
+          BR    2.394           2.394           2.394        
+          NR    1.074           1.074           1.074        
+         VAR  500             500             500            
+          NC    1               1               1            
+         ISS    0               0               0            
+          RB     .676            .676            .676        
+         RBM     .676            .676            .676        
+          RE     .1              .1              .1          
+          RC     .654            .654            .654        
+         CJE   25.000000E-12   25.000000E-12   25.000000E-12 
+         VJE    1.333           1.333           1.333        
+         MJE     .522            .522            .522        
+         CJC   11.000000E-12   11.000000E-12   11.000000E-12 
+         VJC    1.333           1.333           1.333        
+         MJC     .518            .518            .518        
+        XCJC     .5              .5              .5          
+         CJS    0               0               0            
+         VJS     .7              .7              .7          
+         MJS     .5              .5              .5          
+          TF  454.400000E-12  454.400000E-12  454.400000E-12 
+         XTF   13.24           13.24           13.24         
+         VTF    4.83            4.83            4.83         
+         ITF     .2163           .2163           .2163       
+          TR  117.500000E-09  117.500000E-09  117.500000E-09 
+         XTB    2.34            2.34            2.34         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 05/13/25 14:46:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-be_project_sil1"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\be_project-pspicefile
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00158)    0.0000 (N00165)    1.6533 (N00180)   20.0000 (N00242)    9.8452     
+
+(N00246)    1.0301 (N00376)    5.6322 (N00647)    1.0301 (N00653)    9.8452     
+
+(N00657)    1.6533 (N00866)    0.0000 (N01669)    4.9665 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -1.071E-02
+
+    TOTAL POWER DISSIPATION   2.14E-01  WATTS
+
+
+**** Interrupt ****
+
+          JOB ABORTED
+
+**** 05/13/25 14:46:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-be_project_sil1"  [ C:\Users\asada\Desktop\Assignments and Resources\Basic Electronics\be_project-pspicefile
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =     3521.19
+
